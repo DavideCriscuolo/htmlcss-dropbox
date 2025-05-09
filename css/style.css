@@ -3,7 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --border-debug: 2px dashed black;
+}
 .debug {
-  background-color: blue;
+  .site_header {
+    border: var(--border-debug);
+    background-color: aqua;
+  }
+  .site_main {
+    border: var(--border-debug);
+    background-color: lightcoral;
+    max-height: 1200px;
+  }
+  .container_desc_img_jumbo {
+    border: var(--border-debug);
+    .img_jumbo,
+    .desc_jumbo {
+      border: var(--border-debug);
+    }
+  }
+}
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+.site_header {
+  height: 60px;
+}
+
+.site_main {
+  .jumbo {
+    background-color: lightskyblue;
+  }
+  .container_desc_jumbo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container_desc_img_jumbo {
+    display: flex;
+    justify-items: center;
+  }
+  .desc_jumbo {
+  }
+  .img_jumbo {
+    margin-bottom: -4rem;
+  }
+  .img_jumbo img {
+    width: 100%;
+  }
 }
