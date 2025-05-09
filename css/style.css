@@ -27,6 +27,11 @@
     min-height: 3000px;
     background-color: lightgreen;
     border: var(--border-debug);
+
+    .container_sections {
+      background-color: red;
+      border: var(--border-debug);
+    }
   }
   .site_footer {
     min-height: 550px;
@@ -61,6 +66,25 @@
     position: sticky;
     top: 0;
     left: 0;
+
+    .list_right_header {
+      display: flex;
+      gap: 30px;
+      .button {
+        span {
+          margin: 0px 5px;
+        }
+        .bt_blue {
+          color: white;
+          padding: 5px 20px;
+          background-color: blue;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
   }
 
   .logo_header {
@@ -74,16 +98,6 @@
   .list_flex a {
     color: black;
     text-decoration: none;
-  }
-  .button {
-    span {
-      margin: 0px 5px;
-    }
-    .bt_blue {
-      color: white;
-      padding: 5px 20px;
-      background-color: blue;
-    }
   }
 }
 
@@ -106,5 +120,10 @@
   }
   .img_jumbo img {
     width: 100%;
+  }
+  .container_sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
   }
 }
