@@ -38,6 +38,14 @@
     background-color: lightslategrey;
     border: var(--border-debug);
   }
+  .plan {
+    background-color: beige;
+    border: var(--border-debug);
+    .plans_payement {
+      border: var(--border-debug);
+      background-color: cadetblue;
+    }
+  }
 }
 
 .list_flex {
@@ -54,6 +62,8 @@
 
 .col-4 {
   width: calc(100% / 12 * 4);
+  border: var(--border-debug);
+  background-color: lime;
 }
 .site_header {
   height: 60px;
@@ -125,5 +135,41 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    .plan {
+      .plans_payament {
+        display: flex;
+        .plan_col {
+          border: var(--border-debug);
+          .plan_type {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .desc_plan_professional {
+      padding: 10px;
+      .info_price_plan {
+        .info_title_plan {
+          margin-bottom: 10px;
+        }
+        .list_title_plan li {
+          padding: 5px 0;
+        }
+      }
+      .try_trial {
+        background-color: aqua;
+        margin-top: 30px;
+        padding-top: 10px;
+      }
+    }
+    .desc_lis_plan {
+      ul {
+        list-style: none;
+        li {
+          max-width: 50%;
+          padding-top: 8px;
+        }
+      }
+    }
   }
 }
