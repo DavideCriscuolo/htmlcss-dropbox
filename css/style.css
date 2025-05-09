@@ -23,9 +23,25 @@
       border: var(--border-debug);
     }
   }
+  .site_main {
+    min-height: 3000px;
+    background-color: lightgreen;
+    border: var(--border-debug);
+  }
+  .site_footer {
+    min-height: 550px;
+    background-color: lightslategrey;
+    border: var(--border-debug);
+  }
 }
-.col-8 {
+/* larghezza massima della colonna */
+.col-6 {
   width: calc(100% / 12 * 6);
+  padding: 10px;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
 }
 .site_header {
   height: 60px;
@@ -34,6 +50,7 @@
 .site_main {
   .jumbo {
     background-color: lightskyblue;
+    min-height: 540px;
   }
   .container_desc_jumbo {
     width: 50%;
