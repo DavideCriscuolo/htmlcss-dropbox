@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --border-debug: 2px solid grey;
+  --border-debug: 1px solid grey;
+  --bg-bt-blue: #0061fe;
 }
 .debug {
   .site_header {
@@ -147,12 +148,28 @@ body {
     margin: 0 auto;
     height: 100%;
     .plan {
+      .title_section_plan {
+        margin: 0 49px;
+
+        padding: 10px 0px 30px;
+      }
+      .option_payement {
+        margin: 0px 49px;
+        padding: 10px 0px 30px;
+      }
       .plans_payament {
         display: flex;
         .plan_col {
           border: var(--border-debug);
           .plan_type {
+            border-bottom: 1px solid grey;
             text-align: center;
+            min-height: 30px;
+            padding: 10px;
+            i {
+              padding-right: 5px;
+              vertical-align: middle;
+            }
           }
         }
       }
@@ -165,6 +182,9 @@ body {
         }
         .list_title_plan ul {
           list-style-type: none;
+          .txt_grey {
+            color: lightslategray;
+          }
         }
 
         .list_title_plan li {
@@ -172,9 +192,30 @@ body {
         }
       }
       .try_trial {
-        background-color: aqua;
         margin-top: 30px;
         padding-top: 10px;
+        .bt_try_blue {
+          background-color: var(--bg-bt-blue);
+          text-align: center;
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: white;
+            border: none;
+          }
+        }
+        .bt_try_blue:hover {
+          background-color: white;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
+        .else {
+          margin-top: 30px;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
       }
       .points_plane {
         margin-top: 30px;
@@ -195,6 +236,11 @@ body {
             }
           }
         }
+      }
+      hr {
+        color: #e3e2e7;
+        margin-top: 30px;
+        max-width: 20%;
       }
     }
 
@@ -206,15 +252,39 @@ body {
         }
         .list_title_plan ul {
           list-style: none;
+          .txt_grey {
+            color: lightslategray;
+          }
         }
         .list_title_plan li {
           padding: 5px 0;
         }
       }
       .try_trial {
-        background-color: aqua;
         margin-top: 30px;
         padding-top: 10px;
+        .bt_try_blue {
+          background-color: var(--bg-bt-blue);
+          text-align: center;
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: white;
+            border: none;
+          }
+        }
+        .bt_try_blue:hover {
+          background-color: white;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
+        .else {
+          margin-top: 30px;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
       }
       .points_plane {
         margin-top: 30px;
@@ -234,6 +304,11 @@ body {
             }
           }
         }
+      }
+      hr {
+        color: #e3e2e7;
+        margin-top: 30px;
+        max-width: 20%;
       }
     }
 
@@ -245,15 +320,39 @@ body {
         }
         .list_title_plan ul {
           list-style: none;
+          .txt_grey {
+            color: lightslategray;
+          }
         }
         .list_title_plan li {
           padding: 5px 0;
         }
       }
       .try_trial {
-        background-color: aqua;
         margin-top: 30px;
         padding-top: 10px;
+        .bt_try_blue {
+          background-color: var(--bg-bt-blue);
+          text-align: center;
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: white;
+            border: none;
+          }
+        }
+        .bt_try_blue:hover {
+          background-color: white;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
+        .else {
+          margin-top: 30px;
+          a {
+            color: var(--bg-bt-blue);
+          }
+        }
       }
       .points_plane {
         margin-top: 30px;
@@ -274,12 +373,19 @@ body {
           }
         }
       }
+      hr {
+        color: #e3e2e7;
+        margin-top: 30px;
+        max-width: 20%;
+      }
     }
     .desc_lis_plan {
       ul {
         list-style: none;
         li {
-          padding-top: 8px;
+          display: flex;
+          gap: 5px;
+          padding-top: 20px;
         }
       }
     }
