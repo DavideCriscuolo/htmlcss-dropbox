@@ -14,7 +14,6 @@
   .site_main {
     border: var(--border-debug);
     background-color: lightcoral;
-    max-height: 1200px;
   }
   .container_desc_img_jumbo {
     border: var(--border-debug);
@@ -24,19 +23,15 @@
     }
   }
   .site_main {
-    min-height: 3000px;
-    background-color: lightgreen;
-    border: var(--border-debug);
-
     .container_sections {
       background-color: red;
       border: var(--border-debug);
     }
   }
   .site_footer {
-    min-height: 550px;
     background-color: lightslategrey;
     border: var(--border-debug);
+    min-height: 550px;
   }
   .plan {
     background-color: beige;
@@ -49,6 +44,7 @@
 }
 .d_flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .list_flex {
@@ -60,16 +56,25 @@
 /* larghezza media della colonna */
 .col-6 {
   width: calc(100% / 12 * 6);
+  margin-left: 50px;
 }
 .col-12 {
   width: calc(100% / 12 * 12);
-  padding: 10px;
 }
 
+.col-3 {
+  width: calc(100% / 12 * 3);
+  border: var(--border-debug);
+  margin: 10px 49px;
+}
 .col-4 {
   width: calc(100% / 12 * 4);
   border: var(--border-debug);
-  background-color: lime;
+  background-color: lightsalmon;
+}
+
+body {
+  font-family: sans-serif;
 }
 .site_header {
   height: 60px;
@@ -189,18 +194,71 @@
       }
     }
   }
+  .col_team_enterprise {
+    border: 2px solid black;
+    margin-top: 40px;
+    .icon_plan {
+      text-align: center;
+      border-bottom: 2px solid black;
+
+      padding: 10px;
+    }
+    .col_int_team {
+      padding: 10px;
+    }
+  }
   .cta {
     .butt_blue {
       background-color: blue;
       padding: 20px 10px;
     }
   }
+  .partner_drop {
+    margin-top: 160px;
+    margin-bottom: 120px;
+  }
   .container_partner {
     .cont_img {
-      width: 50%;
+      width: 60%;
+    }
+    .text_partner {
+      width: 40%;
+      padding: 40px;
+    }
+    .title_partner {
+      width: 75%;
+      font-size: 1.5rem;
+    }
+    .desc_partner {
+      padding-top: 20px;
+      width: 75%;
     }
     .cont_img img {
       width: 100%;
+    }
+  }
+  .more_cards {
+    margin-bottom: 150px;
+    .col-3 {
+      .img_card img {
+        width: 100%;
+      }
+      .title_card {
+        padding-bottom: 30px;
+      }
+      .desc_card {
+        line-height: 1.25rem;
+        padding-right: 14px;
+      }
+    }
+  }
+  .scopri {
+    padding-left: 50px;
+    .title_scopri {
+      max-width: 37%;
+    }
+    .call_to_action {
+      margin: 20px 0;
     }
   }
 }
