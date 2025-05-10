@@ -46,6 +46,11 @@
 .d_flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px;
+}
+.d_flexx {
+  display: flex;
 }
 
 .list_flex {
@@ -57,7 +62,6 @@
 /* larghezza media della colonna */
 .col-6 {
   width: calc(100% / 12 * 6);
-  margin-left: 50px;
 }
 .col-12 {
   width: calc(100% / 12 * 12);
@@ -66,7 +70,7 @@
 .col-3 {
   width: calc(100% / 12 * 3);
 
-  margin: 10px 49px;
+  margin: 10px 0px 0px 0px;
 }
 .col-4 {
   width: calc(100% / 12 * 4);
@@ -149,16 +153,14 @@ body {
     height: 100%;
     .plan {
       .title_section_plan {
-        margin: 0 49px;
-
         padding: 10px 0px 30px;
       }
       .option_payement {
-        margin: 0px 49px;
         padding: 10px 0px 30px;
       }
       .plans_payament {
         display: flex;
+        justify-content: space-between;
         .plan_col {
           border: var(--border-debug);
           .plan_type {
@@ -391,7 +393,7 @@ body {
     }
   }
   .col_team_enterprise {
-    border: 2px solid black;
+    border: 1px solid black;
     margin-top: 40px;
     .icon_plan {
       text-align: center;
@@ -400,7 +402,7 @@ body {
       padding: 10px;
     }
     .col_int_team {
-      padding: 10px;
+      padding: 20px;
     }
   }
   .cta {
