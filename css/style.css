@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --border-debug: 2px dashed black;
+  --border-debug: 2px solid grey;
 }
 .debug {
   .site_header {
@@ -64,7 +64,7 @@
 
 .col-3 {
   width: calc(100% / 12 * 3);
-  border: var(--border-debug);
+
   margin: 10px 49px;
 }
 .col-4 {
@@ -158,10 +158,54 @@ body {
       }
     }
     .desc_plan_professional {
-      padding: 10px;
+      padding: 10px 20px;
       .info_price_plan {
         .info_title_plan {
           margin-bottom: 10px;
+        }
+        .list_title_plan ul {
+          list-style-type: none;
+        }
+
+        .list_title_plan li {
+          padding: 5px 0;
+        }
+      }
+      .try_trial {
+        background-color: aqua;
+        margin-top: 30px;
+        padding-top: 10px;
+      }
+      .points_plane {
+        margin-top: 30px;
+        .title_section_point {
+          padding: 22px 0;
+        }
+        .list_point {
+          ul {
+            list-style: none;
+          }
+
+          li {
+            display: flex;
+            gap: 5px;
+            padding-top: 8px;
+            i {
+              color: #0061fe;
+            }
+          }
+        }
+      }
+    }
+
+    .desc_plan_advanced {
+      padding: 10px 20px;
+      .info_price_plan {
+        .info_title_plan {
+          margin-bottom: 10px;
+        }
+        .list_title_plan ul {
+          list-style: none;
         }
         .list_title_plan li {
           padding: 5px 0;
@@ -178,8 +222,55 @@ body {
           padding: 22px 0;
         }
         .list_point {
+          ul {
+            list-style: none;
+          }
           li {
+            display: flex;
+            gap: 5px;
             padding-top: 8px;
+            i {
+              color: #0061fe;
+            }
+          }
+        }
+      }
+    }
+
+    .desc_plan_enterprise {
+      padding: 10px 20px;
+      .info_price_plan {
+        .info_title_plan {
+          margin-bottom: 10px;
+        }
+        .list_title_plan ul {
+          list-style: none;
+        }
+        .list_title_plan li {
+          padding: 5px 0;
+        }
+      }
+      .try_trial {
+        background-color: aqua;
+        margin-top: 30px;
+        padding-top: 10px;
+      }
+      .points_plane {
+        margin-top: 30px;
+        .title_section_point {
+          padding: 22px 0;
+        }
+        .list_point {
+          ul {
+            list-style: none;
+          }
+          li {
+            display: flex;
+            gap: 5px;
+            padding-top: 8px;
+            i {
+              color: #0061fe;
+            }
           }
         }
       }
@@ -188,7 +279,6 @@ body {
       ul {
         list-style: none;
         li {
-          max-width: 50%;
           padding-top: 8px;
         }
       }
