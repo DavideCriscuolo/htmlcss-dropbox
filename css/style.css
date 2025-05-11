@@ -501,12 +501,12 @@ body {
       .col_int_team {
         padding: 20px;
       }
-      .title_pan{
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
     }
-    
+    .cta {
+      .butt_blue {
+        background-color: blue;
+        padding: 20px 10px;
+      }
     }
     .partner_drop {
       margin-top: 160px;
@@ -533,7 +533,6 @@ body {
             background-color: white;
             text-align: center;
             padding: 10px 20px;
-            border: 1px solid black;
 
             a {
               text-decoration: none;
