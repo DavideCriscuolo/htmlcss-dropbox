@@ -651,7 +651,7 @@ body {
     }
   }
 }
-
+/* inzio pagina because */
 :root {
   --margin-top-bottom: 50px 0px 50px 0px;
   --small-margin-top-bottom: 20px 0px 20px 0px;
@@ -725,6 +725,26 @@ body {
         margin: var(--margin-top-bottom);
         font-size: 25px;
         line-height: 2rem;
+      }
+    }
+  }
+}
+/* fine pagina because */
+
+.site_main_login {
+  .container {
+    background-color: #0061fe;
+    min-height: 800px;
+  }
+  .container_login {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 80%;
+    form {
+      text-align: center;
+      border: none;
+      label {
+        color: white;
       }
     }
   }
