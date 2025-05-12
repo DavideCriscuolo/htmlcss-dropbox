@@ -651,6 +651,27 @@ body {
     }
   }
 }
+.site_main_because {
+  .container_sections_because {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 1200px;
+
+    .sections_because {
+      max-width: 50%;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    .hero_img {
+      background-image: url(./../img/JumboBecause.png);
+      min-height: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 30px;
+    }
+  }
+}
+
 .site_footer {
   background-color: black;
   .container_footer {
