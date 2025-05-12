@@ -109,6 +109,10 @@ body {
           color: black;
           text-decoration: none;
         }
+        a:hover {
+          color: var(--bg-bt-blue);
+        }
+
         margin: 0px 5px;
         .bt_blue {
           background-color: var(--bg-bt-blue);
@@ -148,6 +152,15 @@ body {
   .list_flex a {
     color: black;
     text-decoration: none;
+  }
+  a:hover {
+    color: var(--bg-bt-blue);
+    border-bottom: 2px solid black;
+    padding-bottom: 18px;
+  }
+  .ancor_logo:hover {
+    border: none;
+    padding: 0;
   }
 }
 
